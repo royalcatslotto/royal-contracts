@@ -3,7 +3,7 @@ pragma solidity 0.6.12;
 import "./libs/BEP20.sol";
 
 // EggToken with Governance.
-contract RoyalPlusToken is BEP20('ROYAL PLUS Token', 'ROYX') {
+contract ROYX is BEP20('ROYAL PLUS Token', 'ROYX') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
